@@ -5,13 +5,15 @@ function createPost() {
 
     let author = document.getElementById('author').value;
     let post = document.getElementById('post').value;
+    let title = document.getElementById('title').value;
+
 
 
     let postTemplate = document.getElementById("post-template").innerHTML;
 
 
     let templateFn = _.template(postTemplate);
-    
+
     let templateHTML = templateFn({'author': author, 'post': post});
 
 
