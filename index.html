@@ -32,21 +32,20 @@
     </article>
 
         <script id="comments-template" type="text/x-lodash-template">
-            <div class="comments">
-                <div class="comment"><%= comment %></div>
-                <div class="commenter">
-                    By: <div type="textarea" id="commenterName"></div><br>
-                    <p>
-                        <span class="posted-by">Posted by: </span>
-                        <%= commenter %>
-                    </p>
-                </div>
-            </div>
             <form id="comment-form" onsubmit="createComment();return false;">
-
-                <button type="submit">Submit</button>
+                <div class="comments">
+                    <div class="comment"><%= comment %></div>
+                        <div class="commenter">
+                            By: <div type="textarea" id="commenterName"></div><br>
+                            <p>
+                                <span class="posted-by">Posted by: </span>
+                                <%= commenter %>
+                            </p>
+                        </div>
+                    </div>
+                    <button type="submit">Submit</button>
+                </div>
             </form>
-
         </script>
 
 
