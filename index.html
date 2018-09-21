@@ -7,46 +7,13 @@
   <body>
     <main>
         <form id="post-form" onsubmit="createPost();return false;">
-            Title: <input type="text" id="title">
+            Title: <input type="text" id="title"><br>
             By: <input type="textarea" id="author"><br>
             title: <input type="textarea" id="post">
             <button type="submit">Submit</button>
         </form>
-
+    </main>
         
-        <article>
-            <script  id="post-template" type="text/x-lodash-template">
-                <div id="post">
-                    <header><span class="post"><%= post %></span></header>
-                    <footer><span class="author">Posted By:<%= author %></span></footer>
-                </div>
-            </script>
-        </article>
-
-            <script id="page-template" type="text/x-lodash-template">
-            <div id="sidebar"></div>
-
-            </script>
-
-
-            <form id="comment-form" onsubmit="createComment();return false;">
-                By: <input type="textarea" id="commenterName"><br>
-                Content: <input type="textarea" id="commentText">
-                <button type="submit">Submit</button>
-            </form>
-            <div class="comments">
-
-            </div>
-
-            <script id="comments-template" type="text/x-lodash-template">
-            </script>
-    <script id="comment-template" type="text/x-lodash-template">
-        <div id="comment">
-            <p><%= comment %></p>
-            <p>Posted By: <span id="commenterName"><%= commenterName %></span></p>
-        </div>
-    </script>
-
 
 
 
@@ -54,6 +21,7 @@
 
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
+    
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
