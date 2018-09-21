@@ -18,7 +18,7 @@
     <script src="index.js"></script>
 
     <script id="comments-template" type="text/x-lodash-template">
-    
+
     </script>
 
 
@@ -32,22 +32,26 @@
     </article>
 
         <script id="comments-template" type="text/x-lodash-template">
-    
+            <div class="comments">
+                <div class="comment"><%= comment %></div>
+                <div class="commenter">
+                    By: <div type="textarea" id="commenterName"></div><br>
+                    <p><span  class="posted-by"></span></p>
+                    Content: <input type="textarea" id="commentText">
+                </div>
+            </div>
             <form id="comment-form" onsubmit="createComment();return false;">
-                By: <input type="textarea" id="commenterName"><br>
-                Content: <input type="textarea" id="commentText">
+
                 <button type="submit">Submit</button>
             </form>
 
         </script>
 
 
-        
-        <div class="comments">
 
-        </div>
 
-        
+
+
 <script id="comment-template" type="text/x-lodash-template">
     <div id="comment">
         <p><%= comment %></p>
