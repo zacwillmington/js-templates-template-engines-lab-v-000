@@ -16,6 +16,6 @@ function createPost() {
 }
 
 function postComment() {
-
-    
+    let commentTemplate = document.getElementById("comment-template").innerHTML;
+   let templateFn = _.template(commentTemplate);
 }
