@@ -13,15 +13,49 @@
             <button type="submit">Submit</button>
         </form>
     </main>
-        
-
-
-
-
 
     <script src="node_modules/lodash/lodash.min.js"></script>
     <script src="index.js"></script>
+
+    <script id="comments-template" type="text/x-lodash-template">
     
+    </script>
+
+
+    <article>
+        <script  id="post-template" type="text/x-lodash-template">
+            <div id="post">
+                <header><span class="post"><%= post %></span></header>
+                <footer><span class="author">Posted By:<%= author %></span></footer>
+            </div>
+        </script>
+    </article>
+
+        <script id="comments-template" type="text/x-lodash-template">
+    
+            <form id="comment-form" onsubmit="createComment();return false;">
+                By: <input type="textarea" id="commenterName"><br>
+                Content: <input type="textarea" id="commentText">
+                <button type="submit">Submit</button>
+            </form>
+
+        </script>
+
+
+        
+        <div class="comments">
+
+        </div>
+
+        
+<script id="comment-template" type="text/x-lodash-template">
+    <div id="comment">
+        <p><%= comment %></p>
+        <p>Posted By: <span id="commenterName"><%= commenterName %></span></p>
+    </div>
+</script>
+
+
     <!-- Open this file and call `mocha.run()` in console to run tests -->
     <div id="mocha"></div>
     <script src="node_modules/mocha/mocha.js"></script>
