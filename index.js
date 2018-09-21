@@ -14,7 +14,7 @@ function createPost() {
 
     let templateFn = _.template(postTemplate);
 
-    let templateHTML = templateFn({'author': author, 'post': post});
+    let templateHTML = templateFn({'author': author, 'post': post, 'title': title});
 
 
     pageTemplate + templateHTML;
