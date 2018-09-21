@@ -6,6 +6,13 @@
   </head>
   <body>
     <main>
+        <form id="post-form" onsubmit="createPost();return false;">
+            By: <input type="textarea" id="author"><br>
+            title: <input type="textarea" id="post">
+            <button type="submit">Submit</button>
+        </form>
+
+        
         <article>
             <script  id="post-template" type="text/x-lodash-template">
                 <div id="post">
@@ -14,11 +21,7 @@
                 </div>
             </script>
         </article>
-        <form id="post-form" onsubmit="createPost();return false;">
-            By: <input type="textarea" id="author"><br>
-            title: <input type="textarea" id="post">
-            <button type="submit">Submit</button>
-        </form>
+        
             <script id="page-template" type="text/x-lodash-template">
             <div id="sidebar"></div>
 
