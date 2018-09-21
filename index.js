@@ -8,11 +8,11 @@ function createPost() {
 
     let pageTemplate = document.getElementById("page-template").innerHTML;
     let postTemplate = document.getElementById("post-template").innerHTML;
-    let commentTemplate = document.getElementById("comment-template").innerHTML;
+    let commentsTemplate = document.getElementById("comments-template").innerHTML;
 
     let postTemplateFn = _.template(postTemplate);
     let pageTemplateFn = _.template(pageTemplate);
-    let commentTemplateFn = _.template(commentTemplate);
+    let commentsTemplateFn = _.template(commentsTemplate);
 
     pageTemplate + templateHTML;
 }
