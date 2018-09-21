@@ -13,10 +13,9 @@ function createPost() {
     let postTemplateFn = _.template(postTemplate);
     let pageTemplateFn = _.template(pageTemplate);
     let commentsTemplateFn = _.template(commentsTemplate);
-
-    pageTemplate + templateHTML;
 }
 
 function postComment() {
 
+    
 }
