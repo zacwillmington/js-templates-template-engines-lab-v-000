@@ -11,8 +11,8 @@ function createPost() {
     let commentTemplate = document.getElementById("comment-template").innerHTML;
 
     let postTemplateFn = _.template(postTemplate);
-    let templateFn = _.template(postTemplate);
-    let templateFn = _.template(postTemplate);
+    let pageTemplateFn = _.template(pageTemplate);
+    let commentTemplateFn = _.template(commentTemplate);
 
 
     let templateHTML = templateFn({'author': author, 'post': post, 'title': title});
